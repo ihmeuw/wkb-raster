@@ -2,7 +2,7 @@
   "name": "wkb-raster",
   "version": "1.0.0",
   "description": "JavaScript parser for the Well-Known Binary (WKB) RASTER type used in PostGIS",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
