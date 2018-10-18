@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ihmeuw/wkb-raster/issues"
   },
-  "homepage": "https://github.com/ihmeuw/wkb-raster#readme"
+  "homepage": "https://github.com/ihmeuw/wkb-raster#readme",
+  "devDependencies": {
+    "tslint": "~5.11.0",
+    "typescript": "~3.1.3"
+  }
 }
