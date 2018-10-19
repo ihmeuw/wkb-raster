@@ -43,5 +43,5 @@ export function getTypedArrayConstructor(pixelType: PixelTypePrimitive): TypedAr
  */
 export function getDataViewValue(dataView: DataView, type: PixelTypePrimitive, byteOffset: number): number {
   const dataViewGetter = (dataView[`get${type}` as keyof DataView] || dataView.getUint8) as DataViewGetter;
-  return dataViewGetter(byteOffset, LITTLE_ENDIAN);
+  return dataViewGetter.call(dataView, byteOffset, LITTLE_ENDIAN);
 }
