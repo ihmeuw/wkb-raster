@@ -5,6 +5,11 @@
   "main": "dist/index.js",
   "module": "es/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "es/",
+    "src/"
+  ],
   "scripts": {
     "test": "tsc --noEmit",
     "prebuild:cjs": "rm -rf dist",
