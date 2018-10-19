@@ -9,6 +9,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "./dist/",
+    "removeComments": true,
     "sourceMap": true,
     "strict": true,
     "target": "es5"
