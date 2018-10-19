@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "JavaScript parser for the Well-Known Binary (WKB) RASTER type used in PostGIS",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc --noEmit",
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,6 +20,13 @@
     "url": "https://github.com/ihmeuw/wkb-raster/issues"
   },
   "homepage": "https://github.com/ihmeuw/wkb-raster#readme",
+  "keywords": [
+    "wkb",
+    "postgis",
+    "raster",
+    "parser",
+    "binary"
+  ],
   "devDependencies": {
     "tslint": "~5.11.0",
     "typescript": "~3.1.3"
