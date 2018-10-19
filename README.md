@@ -9,7 +9,7 @@ Still, beside padding and endiannes, it matches the
 internal serialized format (see RFC1), for quick
 input/output.
 
-The parsed object contains metadata about the raster plus one or more raster bands (each with their own metadata). The pixel data itself constitutes the `data` property of a band. It's represented as a JavaScript TypedArray.
+The parsed object contains metadata about the raster plus one or more raster bands, each with its own metadata. The pixel data itself constitutes the `data` property of a band. It's represented as a JavaScript TypedArray.
 
 ## Installation
 ```bash
