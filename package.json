@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "description": "JavaScript parser for the Well-Known Binary (WKB) RASTER type used in PostGIS",
   "main": "dist/index.js",
+  "module": "es/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "tsc --noEmit",
-    "prebuild": "rm -rf dist",
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "prebuild:cjs": "rm -rf dist",
+    "prebuild:es": "rm -rf es",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:es": "tsc -p tsconfig.es.json",
+    "prepublishOnly": "npm run build:cjs && npm run build:es"
   },
   "repository": {
     "type": "git",
