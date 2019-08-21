@@ -11,7 +11,7 @@
     "src/"
   ],
   "scripts": {
-    "test": "tsc --noEmit",
+    "test": "tsc --noEmit -p tsconfig.es.json",
     "prebuild:cjs": "rm -rf dist",
     "prebuild:es": "rm -rf es",
     "build:cjs": "tsc -p tsconfig.cjs.json",
